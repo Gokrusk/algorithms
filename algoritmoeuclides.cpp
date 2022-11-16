@@ -5,27 +5,27 @@ using namespace std;
 int main()
 {
     // PROTOTIPO
-    void euclides(int a, int *b, int c, int r, int m);
-    int mcd = 0, a = 0, b = 0, c = 0, r = 0, m = 0;
-    cout << " MCD(a,b) " << endl;
-    cout << "Ingrese a: ";
-    cin >> a;
-    cout << "Ingrese b: ";
-    cin >> b;
-    m = b;
-    euclides(a, &m, c, r, m);
-    cout << "El mcd(" << a << ", " << b << ") = " << m << endl;
-    return 0;
+    void euclides(int a, int *b, int c, int r, int m);              //O(1)
+    int mcd = 0, a = 0, b = 0, c = 0, r = 0, m = 0;                 //O(1)
+    cout << " MCD(a,b) " << endl;                                   //O(1)
+    cout << "Ingrese a: ";                                          //O(1)
+    cin >> a;                                                       //O(1)
+    cout << "Ingrese b: ";                                          //O(1)
+    cin >> b;                                                       //O(1)
+    m = b;                                                          //O(1)
+    euclides(a, &m, c, r, m);                                       //O(log(n))
+    cout << "El mcd(" << a << ", " << b << ") = " << m << endl;     //O(1)
+    return 0;                                                       //O(1)
 }
 
 void euclides(int a, int *b, int c, int r, int m)
 {
-    c = a / *b;
-    r = a % *b;
-    if (r != 0)
+    c = a / *b;                                                     //O(1)
+    r = a % *b;                                                     //O(1)
+    if (r != 0)                                                     //O(1)
     {
-        a = *b;
-        *b = r;
-        euclides(a, b, 0, 0, m);
+        a = *b;                                                     //O(1)
+        *b = r;                                                     //O(1)
+        euclides(a, b, 0, 0, m);                                    //O(log(n))
     }
 }
