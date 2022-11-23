@@ -21,7 +21,7 @@ int main()
         x1 = a;
         x2 = b;
         e = (x2 - x1) / 2;
-        while (e >= 0.0002)
+        while (e >= 0.1)
         {
             c = (x1 + x2) / 2;
             sg = funR(x1) * funR(c);
