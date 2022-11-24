@@ -14,14 +14,14 @@ int main()
     sg = funR(a) * funR(b);
     if (sg > 0)
     {
-        cout << "No se encuentra soluci\242 en ese intervalo" << endl;
+        cout << "No se encuentra soluci\242n en ese intervalo" << endl;
     }
     else
     {
         x1 = a;
         x2 = b;
         e = (x2 - x1) / 2;
-        while (e >= 0.1)
+        while (e >= 0.0001)
         {
             c = (x1 + x2) / 2;
             sg = funR(x1) * funR(c);
@@ -38,5 +38,12 @@ int main()
     return 0;
 }
 float funR(float x)
-{    return exp(x) + x - 2;
+{    
+    float k,w,p;
+    w = 3, k=0.5, p = 500;
+    //return exp(x) + x - 2;
+    //return 80*exp(-2*x)+20*exp(-0.5*x)-7;
+    //return 8*exp(-k*x)*cos(w*x)-4;
+    //return p*exp(-0.0248*x)-5;
+    return x*x-5;
 }
