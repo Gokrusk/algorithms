@@ -32,18 +32,18 @@ int main()
             else
                 x1 = c;
             e = (x2 - x1) / 2;
-        } 
+        }
     }
     cout << "La solucion aproximada es: " << c << endl;
     return 0;
 }
 float funR(float x)
-{    
-    float k,w,p;
-    w = 3, k=0.5, p = 500;
-    //return exp(x) + x - 2;
-    //return 80*exp(-2*x)+20*exp(-0.5*x)-7;
-    //return 8*exp(-k*x)*cos(w*x)-4;
-    //return p*exp(-0.0248*x)-5;
-    return x*x-5;
+{
+    float k, w, p;
+    w = 3, k = 0.5, p = 500;
+    // return exp(x) + x - 2;
+    // return 80*exp(-2*x)+20*exp(-0.5*x)-7;
+    // return 8*exp(-k*x)*cos(w*x)-4;
+    // return p*exp(-0.0248*x)-5;
+    return x * x - 5;
 }
