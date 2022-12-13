@@ -34,7 +34,7 @@ float funX(float x)
 
 float formula(float a, float b, float c, float lg)
 {
-    int n = 0;
+    int n = 0;  // cantidad de veces para la que se va a dividir la integracion
     float h, s = 0;
     if (lg <= 1)
     {
@@ -42,8 +42,8 @@ float formula(float a, float b, float c, float lg)
     }
     else
     {
-        n = trunc(lg) + 1;
-        h = lg / n;
+        n = trunc(lg) + 1;  // calculando las cantidad de divisiones que tendrá la integral
+        h = lg / n; // 
         for (int i = 1; i <= n; i++)
         {
             b = a + h;
