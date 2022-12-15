@@ -14,10 +14,10 @@ int main()
     xn = xo; yn = yo;
     do
     {
-        xn1 = xn*xn - yn*yn + xo;
+        xn1 = pow(xn,2) - pow(yn,2) + xo;
         yn1 = 2*xn*yn + yo;
+        i+=1;
         d = sqrt(pow((xn1-xo),2) + pow((yn1-yo),2));
-        i++;
         if(d <= 2)
         {
             xn = xn1;
@@ -25,7 +25,7 @@ int main()
         }else{
             aux = true;
         }
-    } while (!aux and (i <= 70));
+    } while (!aux && (i <= 70));
     if(i >= 70)
     {
         cout<<"Si converge"<<endl;
