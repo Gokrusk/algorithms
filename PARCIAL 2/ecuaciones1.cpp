@@ -17,7 +17,7 @@ int main()
 	cin >> h;
 	// Asignando 
 	x1 = a;
-	while (aux == false && x2 < b)
+	do
 	{
 		x2 = x1 + h;	// asignacion para calcular en el intervalo x1, x2 con el paso h
 		sg = funR(x1) * funR(x2);
@@ -29,7 +29,7 @@ int main()
 		{
 			aux = true;
 		}
-	}
+	}while (aux == false && x2 < b);
 	if (aux == false)
 	{
 		cout << "No se encontr\242 soluci\242n" << endl;
