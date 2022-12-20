@@ -29,7 +29,7 @@ float funX(float x)
     // return pow(sin(x),4);
     // return 1/(1+pow(x,6));
     // return pow(3,x);
-    return exp(x);
+    return 1/sqrt(1+pow(x,2));
 }
 
 float formula(float a, float b, float c, float lg)

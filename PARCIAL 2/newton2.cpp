@@ -22,5 +22,7 @@ int main()
 }
 float funx(float x)
 {
-    return 500*exp(-0.0248*x) - 5;
+    //return 500*exp(-0.0248*x) - 5;
+    return 1/sqrt(1+pow(x,2));
+
 }
