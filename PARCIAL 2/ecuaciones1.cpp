@@ -7,16 +7,19 @@ int main()
 	float funR(float x);
 	float a, b, h, x1, x2, sg;
 	bool aux = false;
+	// Ingresando dominio de busqueda (a, b)
 	cout << "Ingrese a: ";
 	cin >> a;
 	cout << "Ingrese b: ";
 	cin >> b;
+	// Ingresando paso de busqueda
 	cout << "Ingrese h (0.1): ";
 	cin >> h;
+	// Asignando 
 	x1 = a;
 	while (aux == false && x2 < b)
 	{
-		x2 = x1 + h;
+		x2 = x1 + h;	// asignacion para calcular en el intervalo x1, x2 con el paso h
 		sg = funR(x1) * funR(x2);
 		if (sg > 0)
 		{
