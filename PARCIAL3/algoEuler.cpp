@@ -36,6 +36,6 @@ int main()
 
 float f_dif(float t, float y)
 {
-    // return (1 - 2 * t) * y;
-    return (500 - y) * y;
+    return (1 - 2 * t) * y;
+    // return (500 - y) * y;
 }

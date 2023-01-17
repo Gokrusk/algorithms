@@ -28,7 +28,7 @@ int main()
         t[i + 1] = t[i] + h;
         k2 = h*f_dif(t[i+1],y[i]+k1);
         y[i + 1] = y[i] + ((k1+k2)/2);
-        cout<<k1<<" "<<k2<<endl;
+        // cout<<k1<<" "<<k2<<endl;
     }
     for (int i = 0; i <= N; i++)
     {
@@ -39,6 +39,6 @@ int main()
 
 float f_dif(float t, float y)
 {
-    //return (1 - 2 * t) * y;
-    return 0.01*(500 - y) * y;
+    return (1 - 2 * t) * y;
+    // return 0.01*(500 - y) * y;
 }
