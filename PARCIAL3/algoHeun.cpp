@@ -1,6 +1,8 @@
 // ALGORITMO PARA RESOLVER UNA ECUACION DIFERENCIAL
 
 #include <iostream>
+#include <math.h>
+#include <iomanip>
 using namespace std;
 
 int main()
@@ -32,13 +34,15 @@ int main()
     }
     for (int i = 0; i <= N; i++)
     {
-        cout << t[i] << " " << y[i] << endl;
+        cout << t[i] << "       " << y[i] << endl;
     }
     return 0;
 }
 
 float f_dif(float t, float y)
 {
-    return (1 - 2 * t) * y;
-    // return 0.01*(500 - y) * y;
+    return (-(6*t*y-2*pow(y,2)+1)/(2*pow(t,2)-4*t*y));
 }
+
+    //return (1 - 2 * t) * y;
+    // return 0.01*(500 - y) * y;
