@@ -44,7 +44,6 @@ int main()
     }
     return 0;
 }
-
 float f_dif(float t, float y, float x)
 {
     return (t - x) * y;
